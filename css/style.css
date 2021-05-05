@@ -14,24 +14,26 @@
     width: 100px;
     height: 100px;
     background: red;
-    transition: border-radius 1s;
+    transition: border-radius .5s;
+    transition-timing-function: linear;
 }
 .ex-4-square {
     width: 100px;
     height: 100px;
     background: red;
     transition: opacity 2s;
+    transition-timing-function: ease-out;
 }
 .ex-5-square {
     margin: 20px;
     width: 60px;
     height: 60px;
     background: red;
+    transition: width 3s, height 3s; 
 }
 .ex-6-img, .ex-7-img, .ex-8-img {
     width: 500px;
 }
-
 .ex-9-img {
     margin: 50px 100px;
     width: 400px;
@@ -84,3 +86,23 @@
 .ex-4-square:hover{
     opacity: 0;
 }
+.container-5-content{
+    width:100px;
+    height:100px;
+    border:1px solid black;
+}
+.ex-5-square:hover{
+    width: 100px;
+    height: 100px;
+}
+.ex-5-square:active{
+    width: 30px;
+    height: 30px;
+}
+.ex-6-img:hover{
+    filter:grayscale();
+}
+
+
+
+
